@@ -36,6 +36,10 @@ In this assignment, you will convert a Figma design into a fully responsive Next
 - **Communication:**
   - If you have any questions or doubts about the design, ask for clarification instead of making assumptions.
 
+### Note
+
+- You do not need to host you app
+
 ---
 
 ## Submission Guidelines
