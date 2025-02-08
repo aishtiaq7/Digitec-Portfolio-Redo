@@ -7,6 +7,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-color: #4343B5;
+  --secondary-color: #E47100;
+  --title-primary: #151819;
+  --subtitle-secondary: #FFB55C;
+  --text-white: #FCFCFD;
+  --text-black: #151819;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,9 +28,10 @@ body {
   font-family: 'Mona Sans', sans-serif;
 }
 
-.button-primary {
-  background-color: #4343B5;
-  color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 5px;
+.text-black {
+  color: var(--text-black) !important;
+}
+
+.text-white {
+  color: var(--text-white) !important;
 }
