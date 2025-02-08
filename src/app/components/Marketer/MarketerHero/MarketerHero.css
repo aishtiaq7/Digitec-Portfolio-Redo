@@ -1,4 +1,4 @@
-.second-hero-content {
+.marketer-hero-content {
     display: flex;
     flex-direction: column;
     min-height: 80vh;
@@ -7,36 +7,38 @@
     gap: 2rem;
 }
 
-.second-hero-title {
+.marketer-hero-title {
     font-size: 4rem;
     font-weight: 700;
     color: #fff;
 }
 
-.second-hero-description {
+.marketer-hero-description {
     font-size: 1.5rem;
     color: #fff;
     max-width: 55%;
 }
 
 @media (max-width: 1000px) {
-    .second-hero-title {
+    .marketer-hero-title {
         font-size: 3rem;
     }
 
-    .second-hero-description {
+    .marketer-hero-description {
         max-width: 100%;
         text-align: justify;
         font-size: 1.2rem;
     }
 
-    .second-hero-content {
+    .marketer-hero-content {
         align-items: center;
     }
 }
 
 @media (max-width: 700px) {
-    .second-hero-content {
+    .marketer-hero-content {
         gap: 4rem;
+        text-align: center;
+        padding: 4rem 0;
     }
 }

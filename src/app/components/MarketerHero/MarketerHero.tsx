@@ -1,6 +1,6 @@
-import { SecondHeroProps } from "@/types/SecondHero";
+import { SecondHeroProps } from "@/types/marketer/Marketer";
 import "./SecondHero.css";
-import Button from "../Button/Button";
+import Button from "../../Button/Button";
 
 export default function SecondHero({classNameSecondHero, title, description, buttonText, buttonClassname}: SecondHeroProps) {
     return (

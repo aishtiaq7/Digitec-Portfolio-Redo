@@ -1,0 +1,46 @@
+.section-marketer-content {
+    padding: 8rem 0;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.second-section-title {
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: var(--subtitle-secondary);
+}
+
+.second-section-description {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-white);
+    max-width: 75%;
+}
+
+@media (max-width: 1000px) {
+    .second-section-title {
+        font-size: 3rem;
+    }
+
+    .second-section-description {
+        max-width: 100%;
+        text-align: justify;
+        font-size: 1.2rem;
+    }
+
+    .section-marketer-content {
+        align-items: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .second-section-title {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .second-section-description {
+        font-size: 1.2rem;
+    }
+}

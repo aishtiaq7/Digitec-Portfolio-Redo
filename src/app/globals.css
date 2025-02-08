@@ -13,6 +13,7 @@
   --subtitle-secondary: #FFB55C;
   --text-white: #FCFCFD;
   --text-black: #151819;
+  --background-black: #151819;
 }
 
 @media (prefers-color-scheme: dark) {
