@@ -6,7 +6,14 @@ export type MarketerHeroProps = {
     buttonClassname: string;
 }
 
-export type SecondSectionProps = {
+export type ThirdSectionCardProps = {
+    image: string;
     title: string;
     description: string;
+    type: "style1" | "style2" | "style3" | "style4" | "style5" | "style6" | "style7" | "style8" | "style9" | "style10";
+}
+
+export type ThirdSectionProps = {
+    title: string;
+    cards: ThirdSectionCardProps[];
 }

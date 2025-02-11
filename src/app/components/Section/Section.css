@@ -1,5 +1,5 @@
 .section-marketer-hero {
-    background-image: url("/images/marketer-hero.jpeg");
+    background-image: url("/images/marketer/marketer-hero.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,9 +23,6 @@
     z-index: 1;
 }
 
-.vh-100 {
-    min-height: 80vh;
-}
 
 .section-padding {
     padding: 0 8rem !important;
@@ -47,4 +44,8 @@
 
 .section-marketer-second {
     background-color: var(--background-black);
+}
+
+.section-marketer-third {
+    background-color: var(--background-white);
 }
