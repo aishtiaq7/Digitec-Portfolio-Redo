@@ -1,15 +1,7 @@
-import Navbar from "../components/Navbar/Navbar";
 import MarketerHero from "../components/Marketer/MarketerHero/MarketerHero";
 import Section from "../components/Section/Section";
 import SecondSection from "../components/BlackSection/BlackSection";
 import ThirdSection from "../components/Marketer/ThirdSection/ThirdSection";
-
-const navbar = {
-    logo: "/logos/digitec.png",
-    links: ["Service", "Case study", "About us", "Career", "Blog"],
-    buttonText: "Book a consultation",
-    buttonClassname: "button-primary lg:w-60"
-}
 
 const marketerHero = {
     classNameSecondHero: "second-hero-content",
