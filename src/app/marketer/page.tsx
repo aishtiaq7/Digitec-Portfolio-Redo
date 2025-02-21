@@ -68,8 +68,7 @@ const sectionMarketerThird = {
 
 export default function Page() {
     return (
-        <div>
-            <Navbar {...navbar} />            
+        <div>           
             <Section {...sectionMarketerHero} />
             <Section {...sectionMarketerSecond} />
             <Section {...sectionMarketerThird} />

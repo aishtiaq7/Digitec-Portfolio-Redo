@@ -10,6 +10,7 @@ export type ThirdSectionCardProps = {
     image: string;
     title: string;
     description: string;
+    link?: string;
     type: "style1" | "style2" | "style3" | "style4" | "style5" | "style6" | "style7" | "style8" | "style9" | "style10";
 }
 

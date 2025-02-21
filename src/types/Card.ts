@@ -13,4 +13,5 @@ export type StyleOneCardProps = {
     title: string;
     description: string;
     image: string;
+    link: string;
 }
