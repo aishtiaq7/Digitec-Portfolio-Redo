@@ -1,8 +1,8 @@
-import { SecondHeroProps } from "@/types/marketer/Marketer";
+import { MarketerHeroProps } from "@/types/marketer/Marketer";
 import "./SecondHero.css";
-import Button from "../../Button/Button";
+import Button from "../Button/Button";
 
-export default function SecondHero({classNameSecondHero, title, description, buttonText, buttonClassname}: SecondHeroProps) {
+export default function SecondHero({classNameSecondHero, title, description, buttonText, buttonClassname}: MarketerHeroProps) {
     return (
         <div className={classNameSecondHero}>
             <div className="second-hero-content">
