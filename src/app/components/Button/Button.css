@@ -20,3 +20,6 @@
     cursor: pointer;
 }
 
+.button-third-color {
+    background-color: var(--button-third-color);
+}

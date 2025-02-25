@@ -7,11 +7,29 @@ export type CardProps = {
     buttonText?: string;
     buttonClassname?: string;
     dateString?: string;
+    cards?: {
+        title: string;
+        content: string;
+    }[];
 }
 
 export type StyleOneCardProps = {
     title: string;
     description: string;
     image: string;
-    link: string;
+    link?: string;
+}
+
+export type StyleThreeCardProps = {
+    title: string;
+    description: string;
+    image: string;
+}
+
+export type StyleFourCardProps = {
+    title: string;
+    cards: {
+        title: string;
+        content: string;
+    }[];
 }

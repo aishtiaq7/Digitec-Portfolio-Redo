@@ -15,6 +15,7 @@
   --text-black: #151819;
   --background-black: #151819;
   --background-white: #FCFCFD;
+  --button-third-color: #27286B;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -36,4 +37,16 @@ body {
 
 .text-white {
   color: var(--text-white) !important;
+}
+
+.black-background {
+  background-color: var(--background-black) !important;
+}
+
+.white-background {
+  background-color: var(--background-white) !important;
+}
+
+.min-h-6 {
+  min-height: 6rem;
 }

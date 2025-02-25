@@ -1,0 +1,12 @@
+.sixth-section {
+    display: flex;
+    flex-direction: column;
+    padding: 8rem 0;
+}
+
+.sixth-section-title {
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: var(--text-white);
+    margin-bottom: 2rem;
+}
