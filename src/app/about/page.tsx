@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar/Navbar";
 import MarketerHero from "../components/Marketer/MarketerHero/MarketerHero";
 import Section from "../components/Section/Section";
 import SecondSection from "../components/BlackSection/BlackSection";
+import MissionSection from "../components/About/MissionSection/MissionSection";
 
 const navbar = {
     logo: "/logos/digitec.png",
@@ -34,12 +35,27 @@ const sectionAboutSecond = {
     children: <SecondSection {...secondSection} />,
 };
 
+const missionData = {
+    title: "Our Mission",
+    description:
+        "Our mission is to empower small and medium-sized businesses by providing comprehensive, tailor-made digital solutions. Through cutting-edge technology and personalized service, we aim to transform businesses' online presence, ensuring they thrive in the digital era.",
+    buttonText: "Free consulting",
+    buttonClassname: "button-primary  lg:w-60",
+    image: "/images/about/third-section/third-section.png",
+};
+
+const missionSection = {
+    classNameSection: "mission-section",
+    children: <MissionSection {...missionData} />,
+};
+
 export default function Page() {
     return (
         <div>
             <Navbar {...navbar} />
             <Section {...sectionAboutHero} />
             <Section {...sectionAboutSecond} />
+            <Section {...missionSection} />
         </div>
     );
 }

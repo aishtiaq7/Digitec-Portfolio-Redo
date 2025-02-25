@@ -13,7 +13,8 @@
     background-image: url("/images/about/about-hero.jpeg");
 }
 
-.section-marketer-hero::before {
+.section-marketer-hero::before,
+.section-about-hero::before {
     content: "";
     position: absolute;
     top: 0;
@@ -23,13 +24,14 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.section-marketer-hero * {
+.section-marketer-hero *,
+.section-about-hero * {
     position: relative;
     z-index: 1;
 }
 
 .section-padding {
-    padding: 0 8rem !important;
+    padding: 0 12rem !important;
 }
 
 @media (max-width: 700px) {
@@ -46,7 +48,8 @@
     }
 }
 
-.section-marketer-second {
+.section-marketer-second,
+.section-about-second {
     background-color: var(--background-black);
 }
 
