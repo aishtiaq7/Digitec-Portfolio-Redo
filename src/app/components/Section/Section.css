@@ -48,11 +48,19 @@
     }
 }
 
-.section-marketer-second,
-.section-about-second {
+.section-marketer-second {
     background-color: var(--background-black);
 }
 
 .section-marketer-third {
     background-color: var(--background-white);
+}
+
+.mission-section {
+    background-color: var(--background-white);
+}
+
+.section-about-second,
+.section-about-fourth {
+    background-color: var(--background-black);
 }
