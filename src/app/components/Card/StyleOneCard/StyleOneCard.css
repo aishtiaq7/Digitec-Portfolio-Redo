@@ -1,0 +1,32 @@
+.marketer-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 416px;
+    overflow: hidden;
+}
+
+.marketer-card-image-container {
+    width: 100%;
+    height: 100%;
+    max-width: 416px;
+    max-height: 317px;
+    overflow: hidden;
+}
+
+.marketer-card-image {
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.marketer-card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-black);
+}
+
+.marketer-card-description {
+    font-size: 1.5rem;
+    color: var(--text-black);
+}
