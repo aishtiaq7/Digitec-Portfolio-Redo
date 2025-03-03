@@ -1,0 +1,74 @@
+.study-case-card {
+  background: var(--background-white);
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 20rem;
+  min-height: 34rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.250);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.study-case-card:hover {
+  transform: translateY(-4px);
+}
+
+.study-case-card-icon {
+  
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  margin: 0 auto 1rem;
+}
+
+.study-case-icon {
+  color: var(--text-white);
+}
+
+.study-case-card-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-black);
+  margin: 0;
+}
+
+.study-case-card-description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4a5568;
+  margin: 0;
+}
+
+.study-case-card-link {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: var(--button-third-color);
+  color: var(--text-white);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.arrow {
+  font-size: 20px;
+  transition: transform 0.2s ease;
+}
+
+.study-case-card-link:hover .arrow {
+  transform: translateX(4px);
+}
+
+ /* table media query */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .study-case-card {
+    max-width: 100%;
+  }
+}

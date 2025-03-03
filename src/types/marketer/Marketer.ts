@@ -16,6 +16,7 @@ export type SectionCardProps = {
 
 export type ThirdSectionProps = {
     title: string;
+    subtitle?: string;
     cards: SectionCardProps[];
 }
 
