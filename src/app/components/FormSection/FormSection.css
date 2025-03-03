@@ -88,6 +88,7 @@
     cursor: pointer;
     transition: background-color 0.2s ease;
     margin-top: 8px;
+    margin-bottom: 1rem;
   }
   
   .submit-button:hover {
