@@ -5,6 +5,7 @@ import ThirdSection from "../components/Marketer/ThirdSection/ThirdSection";
 import FourthSection from "../components/Marketer/FourthSection/FourthSection";
 import FifthSection from "../components/Marketer/FifthSection/FifthSection";
 import SixthSection from "../components/Marketer/SixthSection/SixthSection";
+import FormSection from "../components/FormSection/FormSection";
 
 const marketerHero = {
     classNameSecondHero: "second-hero-content",
@@ -152,6 +153,12 @@ const sectionMarketerSixth = {
     children: <SixthSection {...sixthSection} />
 }
 
+
+const formSection = {
+  classNameSection: "section-form",
+  children: <FormSection />,
+};
+
 export default function Page() {
     return (
         <div>           
@@ -161,6 +168,7 @@ export default function Page() {
             <Section {...sectionMarketerFourth} classNameSection="black-background" />
             <Section {...sectionMarketerFifth} classNameSection="white-background" />
             <Section {...sectionMarketerSixth} classNameSection="black-background" />
+              <Section {...formSection} />
         </div>
     )
 }
