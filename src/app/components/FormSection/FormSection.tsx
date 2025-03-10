@@ -57,7 +57,7 @@ export default function ContactSection() {
             <picture>
               <source
                 srcSet="/images/form/form-small.png"
-                media="(max-width: 480px)"
+                media="(max-width: 768px)"
               />
               <Image
                 src="/images/form/form.png"
