@@ -5,7 +5,7 @@ margin-top: 2rem;
   .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 48px;
+    gap: 1.5rem;
     align-items: start;
   }
   
@@ -18,15 +18,17 @@ margin-top: 2rem;
     font-weight: 700;
     margin-bottom: 24px;
     color: #1a1a1a;
+    text-align: start;
   }
   
   .contact-description {
-    font-size: 16px;
+    margin-top: 1.2rem;
+    font-size: 1rem;
     line-height: 1.6;
     color: #4a5568;
     margin-bottom: 32px;
     max-width: 31.25rem;
-    
+    text-align: start;
   }
   
   .contact-image {
@@ -38,7 +40,8 @@ margin-top: 2rem;
   .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.8rem;
+    width: 100%;
     /* max-width: 500px; */
   }
   
@@ -76,11 +79,11 @@ margin-top: 2rem;
   }
   
   .submit-button {
+    width: fit-content;
     background-color: #26235C;
     color: white;
-    padding: 12px 24px;
+    padding: 0.8rem 4rem;
     border: none;
-    border-radius: 6px;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;

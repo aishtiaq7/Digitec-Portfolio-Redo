@@ -53,19 +53,25 @@ export default function ContactSection() {
           <h2 className="contact-title">
             Let&apos;s build your vision together!
           </h2>
+          <div className="contact-image">
+            <picture>
+              <source
+                srcSet="/images/form/form-small.png"
+                media="(max-width: 480px)"
+              />
+              <Image
+                src="/images/form/form.png"
+                alt="People meeting"
+                width={400}
+                height={300}
+                priority
+              />
+            </picture>
+          </div>
           <p className="contact-description">
             Do you have a project idea or need guidance? Fill out the form
             below, and our team will get back to you within 2 business days.
           </p>
-          <div className="contact-image">
-            <Image
-              src="/images/form/form.png"
-              alt="People meeting"
-              width={400}
-              height={300}
-              priority
-            />
-          </div>
         </div>
 
         <form className="contact-form" onSubmit={handleSubmit}>
