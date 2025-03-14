@@ -21,23 +21,25 @@
 
 @media (max-width: 1000px) {
     .marketer-hero-title {
-        font-size: 3rem;
+        font-size: 2rem;
+        text-align: center;
     }
 
     .marketer-hero-description {
-        max-width: 100%;
-        text-align: justify;
-        font-size: 1.2rem;
+        max-width: 93%;
+        text-align: left;
+        font-size: 1.1rem;
+        margin-bottom: 0.7rem;
     }
 
     .marketer-hero-content {
-        align-items: center;
+        align-items: left;
     }
 }
 
 @media (max-width: 700px) {
     .marketer-hero-content {
-        gap: 4rem;
+        gap: 1rem;
         text-align: center;
         padding: 4rem 0;
     }

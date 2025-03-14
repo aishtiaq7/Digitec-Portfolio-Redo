@@ -47,3 +47,11 @@
     border: 1px solid var(--text-white);
 }
 
+@media (max-width: 768px) {
+    .marketer-card-divider {
+        border: none;
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+}

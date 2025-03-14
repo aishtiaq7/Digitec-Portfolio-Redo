@@ -36,8 +36,8 @@
 
 @media (max-width: 500px) {
     .third-section-title {
-        font-size: 2rem;
-        text-align: center;
+        font-size: 1.5rem;
+        text-align: left;
     }
     .third-section-cards {
         flex-direction: column;
@@ -45,15 +45,18 @@
         justify-content: center;
     }
     .third-section-title {
-        font-size: 2rem;
-        text-align: center;
+        font-size: 1.5rem;
+        text-align: left;
     }
     .marketer-card-title {
         font-size: 1.5rem;
-        text-align: center;
+        text-align: left;
     }
     .marketer-card-description {
         font-size: 1rem;
-        text-align: center;
+        text-align: left;
+    }
+    .third-section {
+        padding: 4rem 0;
     }
 }
