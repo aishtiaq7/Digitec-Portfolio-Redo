@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="space-y-3">
             <input
               type="text"
-              placeholder="Enter your first name"
+              placeholder="Enter your email address"
               className="w-full px-4 py-2 text-gray-900"
             />
             <button className='subscribeButton'>Subscribe</button>
