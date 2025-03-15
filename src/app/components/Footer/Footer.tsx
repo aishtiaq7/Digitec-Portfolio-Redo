@@ -1,24 +1,31 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Linkedin } from "lucide-react"
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import  "./Footer.css"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2A2B5F] text-white py-16">
+    <footer className="bg-[#2A2B5F] text-white py-16 px-4">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Newsletter Section */}
         <div className="space-y-4">
           <h3 className="text-2xl font-semibold">Join Our Newsletter</h3>
-          <p className="text-gray-300">Be the first to know about our latest updates, exclusive offers, and more</p>
+          <p className="text-gray-300 footer-newsletter-description">Be the first to know about our latest updates, exclusive offers, and more</p>
           <div className="space-y-3">
             <input
               type="text"
               placeholder="Enter your first name"
-              className="w-full px-4 py-2 rounded-md text-gray-900"
+              className="w-full px-4 py-2 text-gray-900"
             />
             <button className='subscribeButton'>Subscribe</button>
           </div>
+        </div>
+
+        <div className="white-line-divider"></div>
+
+        <div className="flex items-center justify-start gap-4 space-x-2 hidden-two py-3">
+            <Image src="/logos/digitec.png" alt="DigiTech Innovation Logo" width={60} height={40} />
+            <span className="text-2xl font-semibold">DigiTech Innovation</span>
         </div>
 
         {/* Service Section */}
@@ -84,8 +91,8 @@ export default function Footer() {
         </div>
 
         {/* Company Info Section */}
-        <div className="space-y-8">
-          <div className="flex items-center space-x-2">
+        <div className="md:space-y-8 location-image-footer">
+          <div className="flex items-center space-x-2 hidden-one">
             <Image src="/logos/digitec.png" alt="DigiTech Innovation Logo" width={60} height={40} />
             <span className="text-xl font-semibold">DigiTech Innovation</span>
           </div>
@@ -96,16 +103,20 @@ export default function Footer() {
           </div>
 
           <div className="space-y-4">
+          <p className="text-sm text-gray-300 hidden-one">DigiTech Innovation © 202X. All rights reserved.</p>
             <div className="flex space-x-4">
               <Link href="#" className="text-gray-300 hover:text-white">
-                <Facebook className="w-6 h-6" />
+                <FaFacebook className="w-10 h-10" />
               </Link>
               <Link href="#" className="text-gray-300 hover:text-white">
-                <Linkedin className="w-6 h-6" />
+                <FaLinkedin className="w-10 h-10" />
               </Link>
-            </div>
-            <p className="text-sm text-gray-300">DigiTech Innovation © 202X. All rights reserved.</p>
+            </div>            
           </div>
+        </div>
+        <div className="white-line-divider"></div>
+        <div className="hidden-two text-center mt-5">
+          <p className="text-sm text-gray-300 mt-5">DigiTech Innovation © 202X. All rights reserved.</p>
         </div>
       </div>
     </footer>
