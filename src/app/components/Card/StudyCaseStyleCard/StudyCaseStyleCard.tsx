@@ -19,7 +19,6 @@ export default function StudyCaseStyleCard({ title, description, image, link = "
             <p className="study-case-card-description">{description}</p>
             <Link href={link} className="study-case-card-link">
                 Learn more 
-                <span className="arrow">›</span>
             </Link>
         </div>
     )

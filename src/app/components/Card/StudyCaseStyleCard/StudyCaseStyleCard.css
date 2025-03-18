@@ -57,10 +57,6 @@
   transition: color 0.2s ease;
 }
 
-.arrow {
-  font-size: 20px;
-  transition: transform 0.2s ease;
-}
 
 .study-case-card-link:hover .arrow {
   transform: translateX(4px);

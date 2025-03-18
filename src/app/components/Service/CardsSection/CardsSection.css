@@ -3,9 +3,15 @@
 }
 
 .cards-section-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--text-black);
   padding-top: 3rem;
   margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .cards-section-title {
+    font-size: 1.5rem;
+  }
 }

@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import "./FormSection.css";
 import { toast } from "sonner";
+import Link from "next/link";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -12,6 +13,7 @@ export default function ContactSection() {
     email: "",
     description: "",
   });
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -33,12 +35,14 @@ export default function ContactSection() {
         toast.success("Thanks for reaching out! We'll get back to you soon.", {
           duration: 4000,
         });
+        
         setFormData({
           firstName: "",
           lastName: "",
           email: "",
           description: "",
         });
+        setIsSubmitted(true);
       } else {
       }
     } catch (error) {
@@ -74,7 +78,17 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <div className="form-container">
+          <div className="thank-you-message" style={{ display: isSubmitted ? "flex" : "none" }}>
+            <h3>Thank you!</h3>
+            <p>
+              A member from our will contact you soon. You can also reach us at{" "}
+              <Link href="mailto:hello.digitecinnovation@gmail.com">
+                hello.digitecinnovation@gmail.com
+              </Link>
+            </p>
+          </div>
+          <form className="contact-form" onSubmit={handleSubmit} style={{ display: isSubmitted ? "none" : "block" }}>
           <div className="form-group">
             <label htmlFor="firstName">First Name</label>
             <input
@@ -133,6 +147,8 @@ export default function ContactSection() {
             Submit
           </button>
         </form>
+        </div>
+        
       </div>
     </section>
   );
