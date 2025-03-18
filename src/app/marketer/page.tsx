@@ -81,14 +81,14 @@ const fourthSectionCards = [
         type: "style3" as const,
     },
     {
-        title: "Implementation and delivery",
+        title: "Implementation & delivery",
         description: "Implement the solutions, deploy, and deliver to you seamlessly.",
         image: "/images/marketer/fourth-section/card4.png",
         type: "style3" as const,
     },
     {
-        title: "Support and maintenance",
-        description: "ongoing assistance to ensure the solutions run smoothly and optimize performance as needed.",
+        title: "Support & maintenance",
+        description: "Ongoing assistance to ensure the solutions run smoothly and optimize performance as needed.",
         image: "/images/marketer/fourth-section/card5.png",
         type: "style3" as const,
     },
@@ -107,6 +107,7 @@ const sectionMarketerFourth = {
 
 const fifthSection = {
     title: "Come check our latest case study!",
+    icon: "/icons/arrow-up-right.svg",
     image: "/images/marketer/fifth-section/fifth-section-image.png",
     subtitle: "UX review presentations",
     description: "How do you create compelling presentations that wow your colleagues and impress your managers?",
@@ -161,6 +162,7 @@ export default function Page() {
             <Section {...sectionMarketerFourth} classNameSection="black-background" />
             <Section {...sectionMarketerFifth} classNameSection="white-background" />
             <Section {...sectionMarketerSixth} classNameSection="black-background" />
+            
         </div>
     )
 }

@@ -32,6 +32,7 @@ export type FifthSectionProps = {
     description: string;
     buttonText: string;
     buttonClassname: string;
+    icon: string;
 }
 
 export type SixthSectionProps = {
