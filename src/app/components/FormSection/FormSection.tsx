@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import "./FormSection.css";
-import { toast } from "sonner";
 import Link from "next/link";
 
 export default function ContactSection() {
@@ -32,10 +31,6 @@ export default function ContactSection() {
       });
 
       if (res.ok) {
-        toast.success("Thanks for reaching out! We'll get back to you soon.", {
-          duration: 4000,
-        });
-        
         setFormData({
           firstName: "",
           lastName: "",
@@ -43,7 +38,6 @@ export default function ContactSection() {
           description: "",
         });
         setIsSubmitted(true);
-      } else {
       }
     } catch (error) {
       console.error("Error sending email:", error);
@@ -79,7 +73,10 @@ export default function ContactSection() {
         </div>
 
         <div className="form-container">
-          <div className="thank-you-message" style={{ display: isSubmitted ? "flex" : "none" }}>
+          <div
+            className="thank-you-message"
+            style={{ display: isSubmitted ? "flex" : "none" }}
+          >
             <h3>Thank you!</h3>
             <p>
               A member from our will contact you soon. You can also reach us at{" "}
@@ -88,67 +85,70 @@ export default function ContactSection() {
               </Link>
             </p>
           </div>
-          <form className="contact-form" onSubmit={handleSubmit} style={{ display: isSubmitted ? "none" : "block" }}>
-          <div className="form-group">
-            <label htmlFor="firstName">First Name</label>
-            <input
-              type="text"
-              id="firstName"
-              placeholder="Enter your first name"
-              required
-              value={formData.firstName}
-              onChange={handleChange}
-            />
-          </div>
+          <form
+            className="contact-form"
+            onSubmit={handleSubmit}
+            style={{ display: isSubmitted ? "none" : "block" }}
+          >
+            <div className="form-group">
+              <label htmlFor="firstName">First Name</label>
+              <input
+                type="text"
+                id="firstName"
+                placeholder="Enter your first name"
+                required
+                value={formData.firstName}
+                onChange={handleChange}
+              />
+            </div>
 
-          <div className="form-group">
-            <label htmlFor="lastName">Last Name</label>
-            <input
-              type="text"
-              id="lastName"
-              placeholder="Enter your last name"
-              required
-              value={formData.lastName}
-              onChange={handleChange}
-            />
-          </div>
+            <div className="form-group">
+              <label htmlFor="lastName">Last Name</label>
+              <input
+                type="text"
+                id="lastName"
+                placeholder="Enter your last name"
+                required
+                value={formData.lastName}
+                onChange={handleChange}
+              />
+            </div>
 
-          <div className="form-group">
-            <label htmlFor="email">Email address</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter your email address"
-              required
-              value={formData.email}
-              onChange={handleChange}
-            />
-          </div>
+            <div className="form-group">
+              <label htmlFor="email">Email address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email address"
+                required
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </div>
 
-          <div className="form-group">
-            <label htmlFor="description">What describes what you do?</label>
-            <select
-              id="description"
-              required
-              value={formData.description}
-              onChange={handleChange}
-            >
-              <option value="" disabled>
-                Select
-              </option>
-              <option value="Business Owner">Business Owner</option>
-              <option value="Developer">Developer</option>
-              <option value="Designer">Designer</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
+            <div className="form-group">
+              <label htmlFor="description">What describes what you do?</label>
+              <select
+                id="description"
+                required
+                value={formData.description}
+                onChange={handleChange}
+              >
+                <option value="" disabled>
+                  Select
+                </option>
+                <option value="Business Owner">Business Owner</option>
+                <option value="Developer">Developer</option>
+                <option value="Designer">Designer</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
 
-          <button type="submit" className="submit-button">
-            Submit
-          </button>
-        </form>
+            <button type="submit" className="submit-button">
+              Submit
+            </button>
+          </form>
         </div>
-        
       </div>
     </section>
   );
