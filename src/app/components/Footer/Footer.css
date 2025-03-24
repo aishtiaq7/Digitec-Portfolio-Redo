@@ -1,15 +1,46 @@
 .subscribeButton {
     background-color: #ff6b00;
-    color: white;
+    color: #151819;
     padding: 0.5rem 2rem;
-    border-radius: 0.375rem;
     font-weight: 500;
     transition: background-color 0.2s;
     width: fit-content;
+    font-weight: 600;
   }
   
   .subscribeButton:hover {
     background-color: #e65000;
+  }
+
+  .white-line-divider {
+    display: none;
+  }
+
+  .hidden-two {
+    display: none;
+  }
+
+  @media (max-width: 500px) {
+    .footer-newsletter-description {
+      max-width: 97%;
+    }
+    .white-line-divider {
+      display: block;
+      border-bottom: 1px solid white;
+      margin-top: 0.8rem;
+      margin-bottom: 0.8rem;
+    }
+    .hidden-one {
+      display: none;
+    }
+    .hidden-two {
+      display: flex;
+    }
+    .location-image-footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+    }
   }
   
   

@@ -25,22 +25,23 @@
 
     .second-section-description {
         max-width: 100%;
-        text-align: justify;
+        text-align: left;
         font-size: 1.2rem;
     }
 
-    .section-marketer-content {
-        align-items: center;
-    }
 }
 
 @media (max-width: 700px) {
     .second-section-title {
-        font-size: 3rem;
-        text-align: center;
+        font-size: 1.5rem;
+        text-align: left;
     }
 
     .second-section-description {
         font-size: 1.2rem;
+    }
+
+    .section-marketer-content {
+        padding: 4rem 0;
     }
 }

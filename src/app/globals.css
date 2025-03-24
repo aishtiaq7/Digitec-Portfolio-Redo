@@ -28,6 +28,10 @@ body {
   color: var(--text-white) !important;
 }
 
+.text-subtitle {
+  color: var(--subtitle-secondary);
+}
+
 .black-background {
   background-color: var(--background-black) !important;
 }
