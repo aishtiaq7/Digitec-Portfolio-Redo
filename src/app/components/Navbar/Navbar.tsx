@@ -16,6 +16,17 @@ export default function Navbar({
 }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
 
+  /* Resetting the links passed as props */
+  const camelCaseLinks = links.map(
+    (link) =>
+      link
+        .toLowerCase()
+        .replace(/(?:^\w|[A-Z]|\b\w)/g, (match, index) =>
+          index === 0 ? match.toLowerCase() : match.toUpperCase()
+        )
+        .replace(/\s+/g, "")
+  );
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -44,14 +55,14 @@ export default function Navbar({
       {isOpen && (
         <div className="absolute top-16 left-0 right-0 bg-black shadow-md sm:hidden">
           <ul className="flex flex-col p-4">
-            {links.map((link, index) => (
+            {camelCaseLinks.map((camelCaseLink, index) => (
               <li key={index} className="py-2">
                 <Link
-                  href={`/${link.toLowerCase()}`}
+                  href={`/${camelCaseLink}`}
                   className="text-white hover:text-gray-300 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
-                  {link}
+                  {links[index]}
                 </Link>
               </li>
             ))}
@@ -60,16 +71,17 @@ export default function Navbar({
       )}
       <div className="navbar-links sm:block hidden">
         <ul className="flex gap-4">
-          {links.map((link, index) => (
+          {links.map((link, index) =>{ 
+            return(
             <li key={index}>
               <Link
-                href={`/${link.toLowerCase()}`}
-                className="hover:text-gray-600 transition-colors"
+                href={`/${camelCaseLinks[index]}`}
+                className="hover:text-gray-600 transition-colors text-white"
               >
                 {link}
               </Link>
             </li>
-          ))}
+          )})}
         </ul>
       </div>
       <div className="navbar-button">

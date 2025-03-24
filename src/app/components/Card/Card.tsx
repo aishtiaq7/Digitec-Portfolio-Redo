@@ -4,6 +4,7 @@ import StyleOneCard from "./StyleOneCard/StyleOneCard";
 import SecondStyleCard from "./SecondStyleCard/SecondStyleCard";
 import StyleThreeCard from "./StyleThreeCard/StyleThreeCard";
 import StyleFourCard from "./StyleFourCard/StyleFourCard";
+import StudyCaseStyleCard from "./StudyCaseStyleCard/StudyCaseStyleCard";
 
 export default function Card({ title, description, image, type, link, buttonText, buttonClassname, dateString, cards }: CardProps) {
     const renderCardContent = () => {
@@ -16,6 +17,8 @@ export default function Card({ title, description, image, type, link, buttonText
                 return <StyleThreeCard title={title || ""} description={description || ""} image={image || ""} />
             case "style4":
                 return <StyleFourCard title={title || ""} cards={cards || []} />
+            case "style5":
+                return <StudyCaseStyleCard title={title || ""} description={description || ""} image={image || ""} link={link || ""} />
             default:
                 return <div>Card</div>
         }
